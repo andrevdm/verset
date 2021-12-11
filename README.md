@@ -20,6 +20,7 @@ Notes
  - No transformers are exposed but `lift` is
  - Simple `IsString` helpers (from Protolude)
  - `Map`, `Set` types exposed from containers, but no other functions
+ - `identity` rather than `id`
 
 
  Use Verset if you want a small prelude and are not opposed to a few extra imports in your code base
