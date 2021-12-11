@@ -1,5 +1,8 @@
 # Verset
 
+[![Haskell-CI](https://github.com/andrevdm/verset/actions/workflows/haskell-ci.yml/badge.svg?branch=master)](https://github.com/andrevdm/verset/actions/workflows/haskell-ci.yml)
+
+
 Small Haskell alternative prelude based on [Protolude](https://hackage.haskell.org/package/protolude) and [Intro](https://hackage.haskell.org/package/intro)
 
 *At least it is not a monad tutorial*
