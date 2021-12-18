@@ -60,6 +60,7 @@ module Verset
   , Data.List.Extra.splitOn
   , Data.List.Extra.takeEnd
   , Data.List.Extra.takeWhileEnd
+  , atMay
   , Data.List.filter
   , Data.List.group
   , Data.List.groupBy
@@ -538,6 +539,7 @@ import qualified System.IO
 import           System.IO (FilePath)
 import qualified Text.Read
 import           Text.Show (Show)
+import           Prelude (Maybe(..), Bool(..), otherwise, const, (<), (-))
 
 
 import qualified Verset.Conv as Conv
@@ -739,3 +741,13 @@ ordNub = go Set.empty
       if x `Set.member` s
         then go s xs
         else x : go (Set.insert x s) xs
+
+
+atMay :: [a] -> Prelude.Int -> Maybe a
+atMay xs n
+  | n < 0     = Nothing
+             -- Definition adapted from GHC.List
+  | otherwise = foldr (\x r k -> case k of
+                                   0 -> Just x
+                                   _ -> r (k-1)) (const Nothing) xs n
+{-# INLINABLE atMay #-}
