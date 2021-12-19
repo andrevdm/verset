@@ -1,6 +1,6 @@
 cabal-version:       3.0
 name:                verset
-version:             0.0.1.2
+version:             0.0.1.3
 synopsis:            Small alternative prelude
 description:         Small Haskell alternative prelude. Based on Protolude and Intro
 homepage:            https://github.com/andrevdm/verset#readme
@@ -45,6 +45,7 @@ library
                      , mtl              >= 2.2.2 && < 2.3
                      , safe             >= 0.3.19 && < 0.4
                      , text             >= 1.2.4 && < 1.3
+                     , uuid             >= 1.3.15 && < 1.4
   default-language:    Haskell2010
 
 source-repository head

@@ -456,6 +456,8 @@ module Verset
 
 
   -- * Custom
+  , Data.UUID.UUID
+  , BS.ByteString
   , Data.Text.Text
   , System.IO.FilePath
   , (<<$>>)
@@ -505,7 +507,7 @@ import           Data.List (groupBy, sortBy)
 import qualified Data.List.NonEmpty
 import qualified Data.Map
 import qualified Data.Maybe
-import           Data.Maybe (Maybe (Nothing), fromMaybe)
+import           Data.Maybe (fromMaybe)
 import qualified Data.Monoid
 import qualified Data.Ord
 import           Data.Ord (Ord, comparing)
@@ -540,7 +542,7 @@ import           System.IO (FilePath)
 import qualified Text.Read
 import           Text.Show (Show)
 import           Prelude (Maybe(..), Bool(..), otherwise, const, (<), (-))
-
+import qualified Data.UUID
 
 import qualified Verset.Conv as Conv
 
