@@ -454,6 +454,11 @@ module Verset
   , traceShowId
   , traceShowM
 
+  -- * Time
+  , Data.Time.UTCTime
+  , Data.Time.LocalTime
+  , Data.Time.NominalDiffTime
+
 
   -- * Custom
   , Data.UUID.UUID
@@ -543,6 +548,7 @@ import qualified Text.Read
 import           Text.Show (Show)
 import           Prelude (Maybe(..), Bool(..), otherwise, const, (<), (-))
 import qualified Data.UUID
+import qualified Data.Time
 
 import qualified Verset.Conv as Conv
 
