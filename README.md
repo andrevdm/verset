@@ -5,7 +5,7 @@
 Small Haskell alternative prelude based on [Protolude](https://hackage.haskell.org/package/protolude) and [Intro](https://hackage.haskell.org/package/intro)
 
 ## Why
-*At least it is not a monad tutorial*
+(*At least it is not a monad tutorial*)
 
 There are some great alternative preludes around but I find most of them either too large or too opinionated. 
 What I'd rather have is a minimal prelude and then layer additional changes over it. 
