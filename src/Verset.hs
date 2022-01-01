@@ -95,6 +95,12 @@ module Verset
   , Data.List.zip3
   , Data.List.zipWith
   , Data.List.zipWith3
+  , Data.List.genericLength
+  , Data.List.genericTake
+  , Data.List.genericDrop
+  , Data.List.genericSplitAt
+  , Data.List.genericIndex
+  , Data.List.genericReplicate
   , Safe.cycleDef
   , Safe.cycleMay
   , Safe.headDef
