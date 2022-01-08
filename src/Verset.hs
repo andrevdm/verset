@@ -474,6 +474,7 @@ module Verset
   , (<<$>>)
   , ordNub
   , identity
+  , Control.Monad.Functor
 
 ) where
 
