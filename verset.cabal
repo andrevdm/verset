@@ -1,6 +1,6 @@
 cabal-version:       2.2
 name:                verset
-version:             0.0.1.7
+version:             0.0.1.8
 synopsis:            Small alternative prelude
 description:         Small Haskell alternative prelude. Based on Protolude and Intro
 homepage:            https://github.com/andrevdm/verset#readme
