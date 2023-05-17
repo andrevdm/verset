@@ -12,7 +12,7 @@ copyright:           2021 Andre Van Der Merwe
 category:            Prelude
 build-type:          Simple
 extra-source-files:  README.md
-tested-with:         GHC==8.10.7, GHC==9.2.5, GHC==9.4.4
+tested-with:         GHC==8.10.7, GHC==9.2.5, GHC==9.4.4, GHC==9.6.1
 
 library
   ghc-options: -Wall -Wimplicit-prelude -Wincomplete-uni-patterns -Wincomplete-record-updates -Wcompat -Wredundant-constraints -Wnoncanonical-monad-instances -Widentities -fhide-source-paths -Wpartial-fields -fhide-source-paths -freverse-errors -fwrite-ide-info -hiedir=.hie
