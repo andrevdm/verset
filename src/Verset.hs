@@ -41,6 +41,7 @@ module Verset
   , Data.Maybe.Maybe(Nothing, Just)
 
   -- ** List
+  , Data.List.findIndex
   , Data.List.break
   , Data.List.drop
   , Data.List.dropWhile
@@ -419,6 +420,7 @@ module Verset
   , Control.Concurrent.forkFinally
   , Control.Concurrent.threadDelay
   , Control.Concurrent.myThreadId
+  , Control.Concurrent.STM.atomically
 
   -- * Generic type classes
   , GHC.Generics.Generic
@@ -485,7 +487,7 @@ import qualified Control.Concurrent
 import qualified Control.Exception
 import qualified Control.Monad
 import           Control.Monad ((>>))
-import qualified Control.Monad.Except
+--import qualified Control.Monad.Except
 import qualified Control.Monad.Extra
 import qualified Control.Monad.Fail
 import qualified Control.Monad.Fix
@@ -556,6 +558,7 @@ import           Text.Show (Show)
 import           Prelude (Maybe(..), Bool(..), otherwise, const, (<), (-))
 import qualified Data.UUID
 import qualified Data.Time
+import qualified Control.Concurrent.STM
 
 import qualified Verset.Conv as Conv
 
