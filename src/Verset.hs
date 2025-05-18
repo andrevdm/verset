@@ -371,6 +371,8 @@ module Verset
   , Control.Monad.Extra.whenM
   , Control.Monad.filterM
   , Control.Monad.Fix.MonadFix(mfix)
+  , Control.Monad.forM
+  , Control.Monad.forM_
   , Control.Monad.foldM
   , Control.Monad.foldM_
   , Control.Monad.forever
@@ -454,6 +456,7 @@ module Verset
   , HasCallStack
   , Control.Monad.Fail.MonadFail
   , undefined
+  , error
   , trace
   , traceIO
   , traceId
@@ -586,6 +589,11 @@ print = liftIO . System.IO.print
 undefined :: HasCallStack => a
 undefined = Prelude.undefined
 {-# WARNING undefined "'undefined' should be used only for debugging" #-}
+
+
+error :: HasCallStack => String -> a
+error = Prelude.error
+{-# WARNING error "'error' should be used only for debugging" #-}
 
 
 -- | An infix form of 'fromMaybe' with arguments flipped.
